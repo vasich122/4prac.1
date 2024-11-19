@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/retrofitFragment">
+
+    <fragment
+        android:id="@+id/retrofitFragment"
+        android:name="com.example.a4prac.RetrofitFragment"
+        android:label="fragment_retrofit"
+        tools:layout="@layout/fragment_retrofit" >
+        <action
+            android:id="@+id/action_retrofitFragment_to_dataBaseFragment"
+            app:destination="@id/dataBaseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataBaseFragment"
+        android:name="com.example.a4prac.DataBaseFragment"
+        android:label="fragment_data_base"
+        tools:layout="@layout/fragment_data_base" />
+</navigation>
